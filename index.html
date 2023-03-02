@@ -2,13 +2,88 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>DOM manipulation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Fidelity App Wizard</title>
+  <link rel="stylesheet" href="style.css">
   <script src="main.js" defer></script>
+ 
 </head>
 <body>
-  <h1>
-    THE TITLE OF YOUR WEBPAGE
+  <heading>
+    <div class="header-container">
+  <img id="profile-image" src="https://t4.ftcdn.net/jpg/03/46/93/61/360_F_346936114_RaxE6OQogebgAWTalE1myseY1Hbb5qPM.jpg" alt="profile Image"><h1 id="main-title"> 
+  <a  href="file:///Users/bonmanjecatering/Eat-My-Pizza-Website/Eat-My-Pizza-Website/login.html" style="font-size: 15px;">Sign Up/New account</a> 
+    </div>
+  </heading> 
+
+   <h1> Recommended Allocation
   </h1>
-  <div id="container"></div>
+  <h2 id="second-title">(Fidelity)</h2>
+  <div id="deposit-info">
+  <label for="referrer">Amount of Deposit $
+    <select id="referrer" name="referrer">
+      <option value="">(select one)</option>
+      <option value="1">100</option>
+      <option value="2">200</option>
+      <option value="3">500</option>
+      <option value="4">1000</option>
+      <option value="5">2000</option>
+      <option value="6">Other</option>
+      
+      <input id="custom-input" placeholder="$0.00">
+    </select>
+  </label>
+</div>
+<div id="checkbox-container">
+  <form id="deposit-form">
+    <fieldset>
+      <label for="personal-account"><input id="recommended-split" type="radio" name="deposit-type" class="inline" /> Recommended split</label>
+      <label for="business-account"><input id="custom-split" type="radio" name="deposit-type" class="inline" /> Custom Split</label>
+      <label for="terms-and-conditions">
+        <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /><a href="">Pay Monthly</a>
+      </label>
+    </fieldset>
+  </form>
+</div>
+
+<div id="caclculate-conatiner">
+  <fieldset>
+ <form name="calculate">
+  <strong>Deposit Calculator</strong> <hr>
   
+  
+  Deposit Amount <input type="text" name="deposit" placeholder="$0.00"><br>
+  Percentage of Allocation <input type="text" name="account" placeholder="00.0%"><br>
+    <input type="button" name="" value="check" onclick="check()">
+    <input type="text" name="result" value="result">
+  
+ </form>
+  </fieldset>
+</div>
+
+  <div id="invest-links">
+
+    <a type="fidelity-link" href="https://fundresearch.fidelity.com/mutual-funds/summary/315911693" target="_blank"> View Tracker Info</a><br>
+    
+    <a href="https://institutional.fidelity.com/app/item/RD_13569_30901/browse-domestic-equity-funds-funds-products.html" target="_blank"><button id="Domestic Equity">Domestic Equity</button></a>
+    <a href="https://institutional.fidelity.com/app/item/RD_13569_31164.html" target="_blank"><button id="international-button">International Equity</button></a>
+    <a href="https://fundresearch.fidelity.com/mutual-funds/summary/316146331" target="_blank"><button id="emerging-button">Emerging Markets</button></a>
+    <a href="https://www.fidelity.com/fixed-income-bonds/individual-bonds/us-treasury-bonds" target="_blank"><button id="tresuries-button">U.S. Tresuries</button></a>
+    <a href="https://www.fidelity.com/insights/investing-ideas/glossary-tips" target="_blank"><button id="tips-button">TIPS</button></a>
+    <a href="https://www.fidelity.com/sector-investing/real-estate/overview " target="_blank"><button id="real-estate-button">Real Estate</button></a>
+  </div>
+  <div id="other-links">
+<ul> <strong>Other Links</strong>
+  <li><a href="https://robinhood.com/login" target="_blank"> Robinhood </a></li>
+  <li><a href="https://investor.vanguard.com/my-account/log-on" target="_blank"> vanguard </a></li>
+  <li><a href="https://www.coinbase.com/" target="_blank"> Coinbase 
+
+  </a></li>
+</ul>
+</div>
+<footer>
+
+</footer>
+ 
 </body>

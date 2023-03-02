@@ -1,0 +1,44 @@
+* {
+background-color: #9DF9EF;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+
+}
+
+#profile-image {
+    border-radius: 50%;
+    width: 35px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+ 
+}
+
+#second-title{
+    background-color: #EDF7F6;
+    border: 2px solid gray
+    
+}
+
+select {
+    background-color: #EDF7F6;
+}
+
+#custom-input{
+    background-color: #EDF7F6;
+}
+
+input, #text{
+    background-color: #EDF7F6;
+}
+
+button {
+    background-color: chocolate;
+    color: black;
+    border-radius: 10px;
+    
+}
+
+.header-container{
+    display: flex;
+    gap: 12px;
+}
