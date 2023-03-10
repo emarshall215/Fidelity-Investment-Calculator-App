@@ -1,15 +1,26 @@
 * {
-background-color: #9DF9EF;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+heading {
+    
+}
+
+.check-button{
+ border-radius: 30%;
+}
+
+.profile-logo{
 
 }
 
 #profile-image {
+    
     border-radius: 50%;
     width: 35px;
-    height: auto;
-    margin: 0;
-    padding: 0;
+    margin-bottom: -30px
+    
+  
  
 }
 
@@ -34,11 +45,25 @@ input, #text{
 button {
     background-color: chocolate;
     color: black;
-    border-radius: 10px;
+    border-radius: 8px;
+    border: 1px solid whitesmoke
     
 }
 
 .header-container{
     display: flex;
     gap: 12px;
+   
+}
+
+.form-body{
+    border: solid black 1px;
+    background: linear-gradient(
+        rgb(49, 157, 49)80%,
+        white,
+        silver
+    );
+    padding: 25px;
+    margin: 30px;
+    width: 80%
 }
